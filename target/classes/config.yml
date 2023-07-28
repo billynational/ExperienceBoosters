@@ -1,0 +1,35 @@
+# ExperienceBoosters Configuration
+
+# Messages
+messages:
+  boosterEnabled: "&aThe %type% booster is now active for %duration% minutes!"
+  boosterExpired: "&cYour %type% booster has expired."
+  noPermission: "&cYou don't have permission to use this command."
+  reloadConfig: "&aConfiguration reloaded successfully."
+  serverBoosterActivated: "&aA server-wide {type} booster has been activated for {factor}x XP!"
+
+# Server-wide Booster Factors (multipliers)
+serverBoosters:
+  mining: 2.0
+  farming: 2.0
+  pve: 2.0
+  global: 3.0
+
+# Individual Player Booster Factors (multipliers)
+playerBoosters:
+  mining: 1.5
+  farming: 1.5
+  pve: 1.5
+  global: 3.0
+
+# Permissions
+permissions:
+  enableBooster: "experiencebooster.enablebooster"
+  enableServerBooster: "experiencebooster.enableserverbooster"
+  boosterInfo: "experiencebooster.boosterinfo"
+  reloadConfig: "experiencebooster.reloadconfig"
+
+# Action bar message
+action-bar-message: "&aActive boosters: {type}"
+placeholders:
+  ExperienceBoosters_command_executor: 'Some value here'

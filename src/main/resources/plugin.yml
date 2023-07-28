@@ -1,0 +1,43 @@
+name: ExperienceBoosters
+version: '${project.version}'
+main: me.billymn.experienceboosters.ExperienceBoosters
+api-version: '1.20'
+author: Billymn
+description: a booster plugin for CheekyMC
+depend: [PlaceholderAPI]
+softdepend: [ShopGUIPlusAPI]
+placeholders:
+  experienceboosters:
+    class: me.billymn.experienceboosters.PlayerNamePlaceholder
+    author: Billymn
+    version: 1.0
+commands:
+  booster:
+    description: Activate the experience booster
+    usage: /booster <duration_in_minutes>
+  boosterinfo:
+    description: Check the remaining time for the active booster
+    usage: /boosterinfo
+  reloadconfig:
+    description: Reload the plugin's configuration
+    usage: /reloadconfig
+  enablebooster:
+    description: Enable a booster
+    permission: experiencebooster.enablebooster
+  enableserverbooster:
+    description: Enable a server-wide booster for all players.
+    permission: experiencebooster.enableserverbooster
+    usage: /enableserverbooster <type> <duration_in_minutes>
+  givebooster:
+    description: Give a player an XP booster item.
+    permission: experiencebooster.givebooster
+
+
+permissions:
+  experiencebooster.use:
+    description: Permission to use the experience booster commands
+    default: true
+  experiencebooster.reloadconfig:
+    description: Permission to reload the plugin's configuration
+    default: op
+
